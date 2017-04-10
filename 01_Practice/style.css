@@ -1,0 +1,96 @@
+/*To apply stykle to all elements  - To remove default marghin and padding applied by browser*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica neue, Arial;
+    font-size: 15px;
+}
+
+h1,
+h2 {
+    color: green;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: green;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.main-text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.author-text {
+    font-size: 17px;
+    float: left;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+
+/*standard width - 960px but screens are becoming wider and wider thats why 1140px*/
+
+
+/*auto means left and right are adjusted to the context of the window which is browser window*/
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.wrapper {
+    width: 1140px;
+    /*margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;*/
+    margin: 20px auto 0 auto;
+}
+
+.blog-post {
+    /*background-color: #64B5F6;*/
+    width: 75%;
+    float: left;
+    padding-right: 30px;
+}
+
+.other-post {
+    /*background-color: #CE93D8;*/
+    width: 25%;
+    float: left;
+    margin-top: 70px;
+}
+
+.author-post {
+    /*background-color: #AED581;*/
+    border-top: 1px solid #9E9E9E;
+    padding-top: 10px;
+}
+
+.other {
+    margin-bottom: 40px;
+}
+
+.author-post img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
