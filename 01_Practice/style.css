@@ -64,6 +64,7 @@ h2 {
     width: 75%;
     float: left;
     padding-right: 30px;
+    position: relative;
 }
 
 .other-post {
@@ -94,3 +95,63 @@ h2 {
     height: 150px;
     width: auto;
 }
+
+.date {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+
+/*Use font size between 15 to 25px for body*/
+
+
+/*For headlines and sub headlines use really big font size - 60px to 100px and decrease font-weight of headline*/
+
+
+/*line space - use 120% 150% of font size */
+
+
+/*45 to 90 chars per line*/
+
+
+/*sans-serif - clean fonts modern websites*/
+
+
+/*serif typeface for storytelling and if you have lot of text on your website*/
+
+
+/*Red is a great color to use when power,
+passion,
+strength and excitement want to be transmitted. Brighter tones are more energetic and darker shades are more powerful and elegant. Orange draws attention without being as overpowering as red. It means cheerfulness and creativity. Orange can be associated with friendliness,
+confidence,
+and courage. Yellow is energetic and gives the feeling of happiness and liveliness. Also,
+it associates with curiosity,
+intelligence,
+brightness,
+etc. Green is the color of harmony,
+nature,
+life and health. Also,
+it is often associated with money. In design,
+green can have a balancing and harmonizing effect. Blue means patience,
+peace,
+trustworthiness,
+and stability. It is one of the most beloved colors,
+especially by men. It is associated with professionalism,
+trust and honor. That's actually why the biggest social networks use blue.
+ Purple is traditionally associated with power,
+nobility and wealth. In your design,
+purple can give a sense of wisdom,
+royalty,
+nobility,
+luxury,
+and mystery. Pink expresses romance,
+passivity,
+care,
+peace,
+affection,
+etc. Brown is the color of relaxation and confidence. Brown means earthiness,
+nature,
+durability,
+comfort,
+and reliability.*/
