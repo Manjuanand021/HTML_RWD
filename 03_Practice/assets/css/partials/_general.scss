@@ -1,0 +1,32 @@
+.hero-text {
+    // background-color: purple;
+    width: $max-viewport-width;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.long-paragraph {
+    margin: 0 auto;
+    width: 70%;
+    margin-bottom: 30px;
+}
+
+.box {
+    padding: 1%;
+    P {
+        font-size: 85%;
+    }
+}
+
+.icon-big {
+    font-size: 350%;
+    color: $primary-bg-color;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.meals {
+    margin: 50px 0;
+}

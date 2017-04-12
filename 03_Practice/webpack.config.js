@@ -33,9 +33,9 @@ module.exports = {
                     options: {
                         name: '[name].[ext]',
                         //Copy images to outputPath directory
-                        outputPath: 'assets/images/',
+                        outputPath: '/assets/images/',
                         //Keep the correct reference in index.html
-                        publicPath: 'assets/images/'
+                        // publicPath: 'assets/images/'
                     }
                 }]
             }
@@ -44,7 +44,8 @@ module.exports = {
     plugins: [
         extractPlugin,
         new HTMLWebpackPlugin({
-            template: './index.html'
+            template: './index.html',
+            hash: true
         }),
         //Clean build folder before creating build
         new CleanPlugin(['build'])

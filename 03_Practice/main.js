@@ -6,6 +6,8 @@
 // //CSS dependencies
 require('./assets/css/main.scss');
 
+var abc = "manju";
+
 // //image dependencies
 // require('./assets/images/1.jpg');
 // require('./assets/images/2.jpg');
