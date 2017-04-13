@@ -1,19 +1,15 @@
-//Common Variables
-$font-stack: 'Open Sans',
-sans-serif;
-$dark-grayish-orange:#50483b;
-$mignight-blue:#2c3e50;
-$font-size:20px;
-$max-viewport-width:1140px;
 //Imports
+@import './partials/variables';
 @import './partials/grid';
 @import './partials/mixin';
 @import './partials/button';
 @import './partials/footer';
 @import './partials/h123456';
 @import './partials/header';
+@import './partials/section';
 @import './partials/image';
 @import './partials/link';
 @import './partials/list';
 @import './partials/p';
+@import './partials/icons';
 @import './partials/general';

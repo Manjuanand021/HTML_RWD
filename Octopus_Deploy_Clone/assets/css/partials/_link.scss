@@ -1,0 +1,14 @@
+.nav-links:link,
+.nav-links:visited {
+    text-decoration: none;
+    font-size: 76%;
+    color: $pure-white;
+    border-bottom: 2px solid $transperant-color;
+    padding-bottom: 5px;
+    transition: border-bottom .2s;
+}
+
+.nav-links:active,
+.nav-links:hover {
+    border-bottom: 2px solid $cornflower-blue;
+}

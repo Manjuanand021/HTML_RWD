@@ -1,7 +1,6 @@
-// header {
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), $header-img;
-//     background-size: cover;
-//     background-position: center;
-//     height: 80vh;
-//     background-attachment: fixed;
-// }
+header {
+    background-image: linear-gradient($midmight-blue-light, $mignight-blue);
+    color: $pure-white;
+    background-position: center;
+    background-size: cover;
+}

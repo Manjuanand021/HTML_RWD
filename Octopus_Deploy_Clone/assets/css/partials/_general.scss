@@ -6,4 +6,12 @@
 
 html {
     color: $dark-grayish-orange;
+    font-size: $default-font-size;
+    font-family: $open-sans-font-stack;
+    text-rendering: optimizeLegibility;
+    font-weight: $regular-font-weight;
+}
+
+.clearfix {
+    clear: both;
 }
