@@ -30,3 +30,175 @@
 .meals {
     margin: 50px 0;
 }
+
+.steps {
+    background-color: $ghost-bg-color;
+}
+
+.step-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.step-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.phone {
+    width: 40%;
+}
+
+.work-step {
+    margin-bottom: 50px;
+    div {
+        height: 50px;
+        width: 50px;
+        border: 1px solid $primary-bg-color;
+        color: $primary-bg-color;
+        @include border-radius(50%);
+        text-align: center;
+        padding-top: 5px;
+        float: left;
+        margin-right: 10px;
+        font-size: 150%;
+    }
+}
+
+.work-step:last-of-type {
+    margin-bottom: 60px;
+}
+
+.app-store {
+    height: 50px;
+    width: auto;
+}
+
+.city-box {
+    padding: 1%;
+    figure {
+        margin: 0;
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.city-features {
+    margin-bottom: 5px;
+}
+
+//When giving height and width to inline elements, change display to inline block
+.icon-small {
+    color: $primary-bg-color;
+    font-size: 120%;
+    display: inline-block;
+    width: 30px; //Secrets to align text and icons
+    line-height: $line-height;
+    vertical-align: middle;
+}
+
+.lnk-email:visited,
+.lnk-email:link {
+    text-decoration: none;
+    color: $primary-bg-color;
+    padding-bottom: 5px;
+    border-bottom: 2px solid $transperant-color;
+    transition: border-bottom .2s;
+}
+
+.lnk-email:active,
+.lnk-email:hover {
+    border-bottom: 2px solid $primary-bg-color;
+}
+
+.testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), $testimonial-img;
+    background-size: cover;
+    background-position: center;
+    color: $secondary-color;
+    background-attachment: fixed;
+}
+
+.quote-box {
+    padding: 2%;
+}
+
+.quotes {
+    font-style: italic;
+    line-height: $line-height;
+    text-align: justify;
+    position: relative;
+}
+
+.quotes::before {
+    content: "\201C";
+    font-size: 400%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    display: block;
+}
+
+cite {
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+    img {
+        @include border-radius(50%);
+        height: 50px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+}
+
+.pricing {
+    background-color: $ghost-bg-color;
+}
+
+.plan-box {
+    background-color: $secondary-color;
+    @include border-radius(5px);
+    width: 90%;
+    margin: 0 auto;
+}
+
+//box-shado(x-azis, y axis, blur, color)
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    box-shadow: 0 2px 2px #efefef;
+    ul {
+        list-style: none;
+        // li {
+        //     padding: 5px 0;
+        // }
+    }
+}
+
+//apply font weight when font size is too big
+.plan-price {
+    font-size: 250%;
+    font-weight: $primary-font-weight;
+    margin-bottom: 10px;
+    span {
+        font-size: 30%; //40% of .plan-price since plan-price is parent of span        
+        color: $primary-bg-color;
+    }
+}
+
+.plan-meal-price {
+    font-size: 80%;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}

@@ -9,9 +9,11 @@ $primary-font-weight:300;
 $secondary-color: #fff;
 $primary-bg-color:#e67e22;
 $primary-bg-light-color:#cf6d17;
+$ghost-bg-color: #f4f4f4;
 $transperant-color: transparent;
 $header-img: url('../images/1.jpg');
-//This applies to all elements
+$testimonial-img: url('../images/back-customers.jpg');
+$line-height:140%; //This applies to all elements
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +32,7 @@ html {
 @import './partials/grid';
 @import './partials/mixins';
 @import './partials/header';
+@import './partials/footer';
 @import './partials/h123456';
 @import './partials/button';
 @import './partials/images';
