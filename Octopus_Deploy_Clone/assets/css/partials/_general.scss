@@ -31,9 +31,11 @@ html {
 
 .spotlight {
     width: 100%;
-    box-shadow: #888888 0px 0px 8px 0px;
+    /* box-shadow: #888888 0px 0px 8px 0px; */
     padding: 2%;
-    background-color: $pure-white;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
 }
 
 .spotlight-header {
@@ -49,6 +51,27 @@ html {
     }
     a {
         float: right;
+        background-color: $pure-white;
+        border: 1px solid $twitter-blue;
+        color: $twitter-blue;
+        font-weight: 700;
+        font-size: 70%;
+        padding: 2px 15px;
+    }
+    a:active,
+    a:hover {
+        background-color: $twitter-blue;
+        color: $pure-white;
+        i {
+            color: $pure-white;
+        }
+    }
+    i {
+        display: inline-block;
+        margin-right: 10px;
+        line-height: $regular-line-height;
+        vertical-align: middle;
+        font-size: 110%;
     }
 }
 
@@ -73,6 +96,14 @@ html {
             line-height: $regular-line-height;
             vertical-align: top;
         }
+    }
+}
+
+.companies {
+    p {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 80%;
     }
 }
 
