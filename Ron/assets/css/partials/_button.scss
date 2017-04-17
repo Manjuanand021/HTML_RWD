@@ -1,0 +1,54 @@
+.btn {
+    font-size: 70%;
+    padding: 7px 15px;
+    text-decoration: none;
+    color: $pure-white;
+    @include border-radius(5px);
+    font-weight: $regular-font-weight;
+}
+
+.btn-green:link,
+.btn-green:visited {
+    float: right;
+    background-color: $light-green;
+    transition: background-color .2s;
+}
+
+.btn-cornflower-blue:link,
+.btn-cornflower-blue:visited {
+    background-color: $cornflower-blue;
+    font-weight: $regular-thick-font-weight;
+}
+
+.btn-cornflower-blue:active,
+.btn-cornflower-blue:hover {
+    background-color: $pale-blue;
+}
+
+.btn-pale-blue:link,
+.btn-pale-blue:visited {
+    background-color: $pale-blue;
+    font-weight: $regular-thick-font-weight;
+}
+
+.btn-pale-blue:active,
+.btn-pale-blue:hover {
+    background-color: $cornflower-blue;
+}
+
+.btn-green-light:link,
+.btn-green-light:visited {
+    background-color: $light-green;
+    font-weight: $regular-thick-font-weight;
+}
+
+.btn-green:active,
+.btn-green:hover,
+.btn-green-light:active,
+.btn-green-light:hover {
+    background-color: $light-green-ghost;
+}
+
+.btn-twitter {
+    background-color: $twitter-blue;
+}
