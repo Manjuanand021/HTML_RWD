@@ -1,0 +1,124 @@
+//Common Variables
+$font-stack: 'Lato',
+'Arial',
+sans-serif;
+$primary-color:#555;
+$max-viewport-width:1140px;
+$primary-font-size: 20px;
+$primary-font-weight:300;
+$secondary-color: #fff;
+$primary-bg-color:#e67e22;
+$primary-bg-light-color:#cf6d17;
+$ghost-bg-color: #f4f4f4;
+$transperant-color: transparent;
+$header-img: url('../images/bmw-1.jpg');
+$testimonial-img: url('../images/back-customers.jpg');
+$line-height:140%; //This applies to all elements
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Basic setup
+html {
+    font-family: $font-stack;
+    color: $primary-color;
+    font-size: $primary-font-size;
+    font-weight: $primary-font-weight;
+    text-rendering: optimizeLegibility;
+}
+
+.header-text {
+    width: $max-viewport-width;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    text-decoration: none;
+    margin-right: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 80%;
+    font-weight: $primary-font-weight;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    color: $secondary-color;
+    background-color: $primary-bg-color;
+}
+
+.btn-full:active,
+.btn-full:hover {
+    // color: $secondary-color;
+    background-color: $primary-bg-light-color;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: $primary-bg-color;
+    border: 1px solid $primary-bg-color;
+}
+
+.btn-ghost:active,
+.btn-ghost:hover {
+    color: $secondary-color;
+    background-color: $primary-bg-light-color;
+}
+
+nav {
+    max-width: $max-viewport-width;
+}
+
+.nav-list {
+    list-style: none;
+    float: right;
+    li {
+        display: inline-block;
+        border-bottom: 5px solid $transperant-color;
+        padding-bottom: 10px;
+    }
+    li:hover {
+        border-bottom: 5px solid $primary-bg-color;
+    }
+}
+
+.nav-links:link,
+.nav-links:visited {
+    text-decoration: none;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 400;
+    color: $secondary-color;
+}
+
+// .wrapper {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+// }
+// header,
+// footer,
+// main,
+// aside {
+//     background-color: #ccc;
+//     border-radius: 5px;
+//     padding: 20px;
+// }
+// @import './partials/grid';
+// @import './partials/mixins';
+@import './partials/header';
+// @import './partials/footer';
+@import './partials/h123456';
+// @import './partials/button';
+// @import './partials/images';
+// @import './partials/ul';
+// @import './partials/paragraphs';
+// @import './partials/section';
+// @import './partials/link';
+// @import './partials/general';
