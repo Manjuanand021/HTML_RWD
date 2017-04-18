@@ -21,16 +21,34 @@ html {
     box-shadow: rgb(136, 136, 136) 0px 0px 8px 0px;
 }
 
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $max-viewport-width;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
 .feauture-box {
     padding: 1% 0;
+    flex-basis: 32%;
+    text-align: justify;
 }
 
 .testimonials {
     background-color: $light-gray;
 }
 
+.testimonials-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: $max-viewport-width;
+    margin: 0 auto;
+}
+
 .spotlight {
-    width: 100%;
+    width: 32%;
     /* box-shadow: #888888 0px 0px 8px 0px; */
     padding: 2%;
     background-color: #fff;
@@ -122,4 +140,30 @@ html {
 
 .ion-ios-email {
     color: $parrot-green;
+}
+
+.header-items,
+.main-header {
+    display: flex; // flex-wrap: wrap;
+}
+
+.header-items {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main-header {
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: $max-viewport-width;
+    margin: 0 auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row;
+    max-width: $max-viewport-width;
+    margin: 0 auto;
+    justify-content: space-between;
 }
