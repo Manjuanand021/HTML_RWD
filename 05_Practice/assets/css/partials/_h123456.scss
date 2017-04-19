@@ -1,0 +1,29 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 150%;
+    font-weight: $font-weight-original;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: $dark-grey;
+}
+
+h2 {
+    font-size: 100%;
+    font-weight: $font-weight-original;
+}
+
+h6 {
+    font-size: 60%;
+    font-weight: 700;
+    margin-top: 10px;
+}
