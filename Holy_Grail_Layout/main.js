@@ -19,5 +19,3 @@ var abc = "manju";
 // require('./assets/images/8.jpg');
 // require('./assets/images/hero.jpg');
 // require('./assets/images/logo-white.png');
-
-

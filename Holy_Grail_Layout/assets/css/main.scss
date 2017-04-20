@@ -1,0 +1,75 @@
+// @import './partials/variables';
+// @import './partials/grid';
+// @import './partials/mixins';
+// @import './partials/semantics';
+// @import './partials/h123456';
+// @import './partials/button';
+// @import './partials/images';
+// @import './partials/ul';
+// @import './partials/paragraphs';
+// @import './partials/anchor';
+// @import './partials/general';
+$xs:'only screen and (max-width: 575px)';
+// Small devices (landscape phones, 576px and up)
+$sm:'only screen and (min-width: 576px) and (max-width: 767px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+// Large devices (desktops, 992px and up)
+$lg:'only screen and (min-width: 992px) and (max-width: 1199px)';
+// Extra large devices (large desktops, 1200px and up)
+$xl:'(min-width: 1200px)';
+.row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    background: linear-gradient(to right, #f2994a, #f2c94c);
+    margin: 10px;
+    padding: 15px;
+}
+
+@media #{$md} {
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main .col:nth-child(1) {
+        flex: 1 1 100%;
+    }
+    main .col:nth-child(2) {
+        flex: 2;
+    }
+}
+
+@media #{$lg} {
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main .col:nth-child(2) {
+        flex: 2;
+    }
+}
+
+@media #{$xl} {
+    .row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main .col:nth-child(2) {
+        flex: 2;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+main {
+    flex: 1;
+}
