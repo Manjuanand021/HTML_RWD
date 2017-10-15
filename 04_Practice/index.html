@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dribble Zora Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../vendor/css/normalize.css">
+    <!--<link rel="stylesheet" type="text/css" href="../vendor/css/grid.css">-->
+    <link rel="stylesheet" type="text/css" href="../vendor/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <!-- Responsive top nav -->
+            <h2>Top Naigation Bar</h2>
+            <br>
+            <div class="navbar" id="topNav">
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <br>
+            <!-- Responsive side nav -->
+            <h2>Top Naigation Bar</h2>
+            <br>
+            <div class="side-navbar" id="sideNav">
+                <a href="javascript:void(0);" class="close-btn" onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+                <a href="#">About</a>
+            </div>
+            <br>
+            <button onclick="openNav()">Click me to on side nav</button>
+        </header>
+        <main>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+            <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
+                Consectetur exercitation consectetur cillum officia elit officia consectetur eiusmod ad aliquip. Nostrud cupidatat voluptate consequat mollit ipsum ea ullamco ea ut. Tempor dolore qui amet ex ea deserunt. Ea veniam ea anim adipisicing
+                aliquip commodo esse voluptate pariatur fugiat ad ad pariatur quis.</p>
+        </main>
+    </div>
+    <script>
+        /* Toggle between adding and removing the "responsive"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("topNav");
+            if (x.className === "navbar") {
+                x.className += " js-responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("sideNav").style.width = "250px";
+        } /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("sideNav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

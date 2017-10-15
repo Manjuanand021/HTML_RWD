@@ -1,0 +1,134 @@
+    /* appies to all elements   
+***************************************/
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    /* body style
+***************************************/
+    
+    body {
+        // height: 100%;
+        background-color: #fefefe;
+    }
+    /* appies to all elements
+***************************************/
+    
+    .wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+    /* navgation bar style
+***************************************/
+    /* Add a black background color to the top navigation */
+    
+    .navbar {
+        background-color: #000;
+        overflow: hidden;
+        /* Style the links inside the navigation bar */
+        & a {
+            // float: left;
+            // display: block;
+            // font-size: 17px;
+            // color: #f2f2f2;
+            // text-align: center;
+            // padding: 14px 16px;
+            // text-decoration: none;
+            display: block;
+            float: left;
+            padding: 15px;
+            font-size: 15px;
+            color: #f2f2f2;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            /* Change the color of links on hover */
+            &:hover {
+                background-color: #ddd;
+                color: black;
+            }
+        }
+        /* Hide the link that should open and close the topnav on small screens */
+        & .icon {
+            display: none;
+        }
+    }
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    
+    @media screen and (max-width:600px) {
+        .navbar a:not(:first-child) {
+            display: none;
+        }
+        .navbar a.icon {
+            display: block;
+            float: right;
+        }
+    }
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    
+    @media screen and (max-width: 600px) {
+        .navbar.js-responsive {
+            position: relative;
+            & a.icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            & a {
+                display: block;
+                float: none;
+                text-align: left;
+            }
+        }
+    }
+    /* side nav bar styles
+***************************************/
+    
+    .side-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* 100% Full-height */
+        height: 100%;
+        /* 0 width - change this with JavaScript */
+        width: 0;
+        /* Place content 60px from the top */
+        padding-top: 40px;
+        background-color: rgb(0, 0, 0);
+        /* Black fallback color */
+        background-color: rgba(0, 0, 0, 0.9);
+        /* Black w/opacity */
+        /* Disable horizontal scroll */
+        overflow-x: hidden;
+        /* Stay on top */
+        z-index: 1;
+        /* 0.5 second transition effect to slide in the sidenav */
+        transition: 0.5s;
+        /* The navigation menu links */
+        & a {
+            display: block;
+            font-size: 25px;
+            color: #818181;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            transition: 0.3s
+        }
+        /* When you mouse over the navigation links, change their color */
+        & a:hover {
+            color: #f1f1f1;
+        }
+    }
+    /* Position and style the close button (top right corner) */
+    
+    .side-navbar .close-btn {
+        position: absolute;
+        top: 0;
+        right: 100px;
+        font-size: 36px;
+    }
+    /* main content style
+***************************************/
+    /* appies to all elements
+***************************************/
