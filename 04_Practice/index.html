@@ -11,11 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700" rel="stylesheet">
 </head>
 
-<body>
+<body onscroll="onScroll()">
     <div class="wrapper">
         <header>
             <!-- Responsive top nav -->
-            <h2>Top Naigation Bar</h2>
+            <!-- <h2>Top Naigation Bar</h2>
             <br>
             <div class="navbar" id="topNav">
                 <a href="#">Home</a>
@@ -24,9 +24,9 @@
                 <a href="#">About</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
-            <br>
+            <br> -->
             <!-- Responsive side nav -->
-            <h2>Top Naigation Bar</h2>
+            <!-- <h2>Top Naigation Bar</h2>
             <br>
             <div class="side-navbar" id="sideNav">
                 <a href="javascript:void(0);" class="close-btn" onclick="closeNav()">&times;</a>
@@ -36,7 +36,16 @@
                 <a href="#">About</a>
             </div>
             <br>
-            <button onclick="openNav()">Click me to on side nav</button>
+            <button onclick="openNav()">Click me to on side nav</button> -->
+            <div class="header">
+                <h2>Scroll Down</h2>
+                <!-- <p>Scroll down to see the sticky effect.</p> -->
+            </div>
+            <nav id="navbar">
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </header>
         <main>
             <p>Do amet aliquip in ex aliquip irure Lorem labore adipisicing sint consequat commodo magna. Veniam sint in cillum officia magna consequat velit ea sunt aliquip. Id nisi elit incididunt dolore veniam ex consequat culpa excepteur in magna qui.
@@ -66,8 +75,11 @@
         </main>
     </div>
     <script>
-        /* Toggle between adding and removing the "responsive"
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        class to topnav when the user clicks on the icon */
+        // Get the navbar 
+        var navbar = document.getElementById("navbar");
+        // Get the offset position of the navbar 
+        var sticky = navbar.offsetTop;
+        /* Toggle between adding and removing the "responsive"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        class to topnav when the user clicks on the icon */
         function myFunction() {
             var x = document.getElementById("topNav");
             if (x.className === "navbar") {
@@ -82,6 +94,14 @@
         } /* Set the width of the side navigation to 0 */
         function closeNav() {
             document.getElementById("sideNav").style.width = "0";
+        }
+
+        function onScroll() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
     </script>
 </body>
